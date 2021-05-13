@@ -19,6 +19,11 @@ const HomePage = () => (
           <a>Justice</a>
         </Link>
       </li>
+      <li>
+        <Link href="/shaders/strength">
+          <a>Strength</a>
+        </Link>
+      </li>
     </ul>
   </div>
 );
