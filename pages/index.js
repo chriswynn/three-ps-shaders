@@ -24,6 +24,11 @@ const HomePage = () => (
           <a>Strength</a>
         </Link>
       </li>
+      <li>
+        <Link href="/shaders/death">
+          <a>Death</a>
+        </Link>
+      </li>
     </ul>
   </div>
 );
