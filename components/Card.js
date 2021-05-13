@@ -1,10 +1,16 @@
+import * as THREE from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
 
 const Plane = ({ fragShader }) => {
-  const uniforms = {};
+  const uniforms = {
+    u_resolution: {
+      value: new THREE.Vector2(window.innerWidth, window.innerHeight),
+    },
+  };
 
   const vertexShader = `
     varying vec3 vUv;
+
     void main() {
       vUv = position;
       vec4 modelViewPosition = modelViewMatrix * vec4(position, 1.0);
