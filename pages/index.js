@@ -1,6 +1,20 @@
+import Link from "next/link";
+
 const HomePage = () => (
-  <div>
-    <h1>Homepage</h1>
+  <div
+    style={{
+      padding: 20,
+      maxWidth: 800,
+      margin: "0 auto",
+    }}
+  >
+    <ul>
+      <li>
+        <Link href="/shaders/void">
+          <a>Void</a>
+        </Link>
+      </li>
+    </ul>
   </div>
 );
 
