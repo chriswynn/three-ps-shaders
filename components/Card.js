@@ -19,8 +19,8 @@ const Plane = ({ fragShader }) => {
   `;
 
   return (
-    <mesh position={[0, 0, 3]}>
-      <planeBufferGeometry attach="geometry" args={[10, 10, 1]} />
+    <mesh position={[0, 0, -1]}>
+      <planeBufferGeometry attach="geometry" args={[8, 8, 1]} />
       <shaderMaterial
         attach="material"
         uniforms={uniforms}
